@@ -1,0 +1,31 @@
+:root{
+    /*colours*/
+    --taupe: #E5E1d9;
+    --dustyPink: #DAA7A2;
+    --sage: #A7A88A;
+    --oliveGreen:#37391E;
+
+}
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  background-color: var(--sage);
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:var(--dustyPink);
+    background-color:var(--oliveGreen)
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--taupe);
+    color: var(--oliveGreen);
+}
