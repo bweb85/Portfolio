@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Rebecca Webster // Web Developer</title>
-  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/CSS/style.css"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
   </head>
@@ -16,49 +16,74 @@
   <header>
     <h1>Rebecca Webster</h1>
     <nav class="navbar">
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact Me</a>
-        <a href="#">Resume</a>
+        <div><a href="#aboutMe">About Me</a></div>
+        <div><a href="#work">Work</a></div>
+        <div><a href="#contactMe">Contact Me</a></div>
+        <div><a href="#">Resume</a></div>
     </nav>
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
+    <div class="hero-image">
       <h2>Future web developer</h2>
     </div>
-  </section>
 
-  <main class="page-wrapper">
+
+  <main>
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+    <section class="page-section">
+   <h3 id="aboutMe">About Me</h3>
+      <div class="subsection">
+      <img src="./assets/images/Me.jpg" alt="Me smiling into camera" class="aboutMeImage">
+      <p>A former primary school teacher I have completed an introduction to Web Development course through Code First Girls and am now undertaking a Web Development bootcamp through EdEx. I am really enjoying this journey and am hoping to make a permanent career move to the tech industry in 2024. Happy to connect and take on freelance projects while I am learning. </p>
+     </div>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <h2>Work</h2>
-      <div>image 1</div>
-      <div>image 2</div>
-      <div>image 3</div>
-      <div>image 4</div>
-      <div>image 5</div>
+     <h3>Work</h3>
+     <div class="projectGrid">
+      <div>
+        <a href="https://bweb85.github.io/HoriseonAccessibility/" target="_blank"><h4 class="projectImage1"></h4>Horiseon Website Project</h4></a>
+        </div>
+      <div>
+        <a href="#"><h4 class="projectImage2">Project 2</h4></a>
+      </div>
+      <div>
+        <a href="#"><h4 class="projectImage3">Project 3</h4></a>
+      </div>
+      <div>
+        <a href="#"></a><h4 class="projectImage4">Project 4</h4></a>
+      </div>
+      <div>
+        <a href="#"></a><h4 class="projectImage5">Project 5</h4></a>
+      </div>
+    </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <div>link 1</div>
-      <div>link 2</div>
-      <div>link 3</div>
-      <div>link 4</div>
-      <div>link 5</div>
+    <section class="page-section" id="contactMe">
+      <h3 >Contact Me</h3>
+     <div class="contactSub">
+      <div>
+        <a href="#" target="_blank">email</a></div>
+      <div> 
+        <a href="https://www.instagram.com/beckycwebster/" target="_blank">Instagram</a>
+        </div>
+      <div>
+        <a href="https://www.linkedin.com/in/becky-webster-500714294/" target="_blank">LinkedIn</a>
+        </div>
+      <div>
+        <a href="https://twitter.com/beckycwebster" target="_blank">Twitter</a>
+      </div>
+      <div>
+        <a href="#" target="_blank">Mobile</a></div>
+    </div> 
     </section>
   </main>
 
   <footer>
-    <h3>Made by Rebecca Webster</h3>
+    <h5>Made by Rebecca Webster</h4>
   </footer>
 </body>
 
