@@ -1,4 +1,5 @@
 Portfolio of web developer work for Rebecca Webster
+Showcasing completed projects and upcoming work. Including how to contact and links. 
 
 ## Acceptance Criteria
 
