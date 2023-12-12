@@ -37,8 +37,8 @@ h1{
 }
 
 .navbar a:hover{
-    color: var(--taupe);
-    background-color: var(--dustyPink);
+    color: var(--dustyPink);
+    background-color: var(--taupe);
     box-shadow: 0 0 10px var(--dustyPink);
     border-radius: 5px;
 }
@@ -80,7 +80,6 @@ h2{
 
 /*main section*/
 
-
 .page-section h3 {
     display: flex;
     flex-direction: column;
@@ -97,68 +96,111 @@ h2{
     width: 100%;
 }
 
+/*Work Grid*/
+
 .projectGrid {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(4, 150px);
     grid-template-areas: "projectImage1 projectImage2"
                         "projectImage1 projectImage3"
                         "projectImage1 projectImage4"
                         "projectImage1 projectImage5";
+    ;
 }
-
 
 .projectImage1 {
     grid-area: projectImage1;
-    background-image: url(../images/Horiseon-website.jpeg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
+    padding: 10px;
 }
 
 .projectImage2 {
     grid-area: projectImage2;
-    background-image: url(../images/project-2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
+    padding: 10px;
 }
 
 .projectImage3 {
     grid-area: projectImage3;
-    background-image: url(../images/project-3.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
+    padding: 10px;
 }
 
 .projectImage4 {
     grid-area: projectImage4;
-    background-image: url(../images/project-4.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
+    padding: 10px;
 }
 
 .projectImage5 {
     grid-area: projectImage5;
-    background-image: url(../images/project-5.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
+    padding: 10px;
 }
 
-h4 {
+.projectGrid a {
     position:relative;
-    top: 150px;
-    color: var(--taupe);
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
+    color: var(--taupe);
+}
+
+.projectImage1,
+.projectImage2,
+.projectImage3,
+.projectImage4,
+.projectImage5 {
+    position: relative;
+}
+
+.projectImage1 img,
+.projectImage2 img,
+.projectImage3 img,
+.projectImage4 img,
+.projectImage5 img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.projectImage1 a,
+.projectImage2 a,
+.projectImage3 a,
+.projectImage4 a,
+.projectImage5 a {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px; 
+}
+
+.projectImage1 span,
+.projectImage2 span,
+.projectImage3 span,
+.projectImage4 span,
+.projectImage5 span{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--taupe);
+} 
+
+.projectGrid a span:hover {
+    color: var(--dustyPink);
+    background-color: var(--taupe);
+    box-shadow: 0 0 10px var(--dustyPink);
+    border-radius: 5px;
 }
 
 /* contact section*/
@@ -175,17 +217,78 @@ h4 {
 }
 
 .contactSub a:hover{
-    color: var(--taupe);
-    background-color: var(--dustyPink);
+    color: var(--dustyPink);
+    background-color: var(--taupe);
     box-shadow: 0 0 10px var(--dustyPink);
     border-radius: 5px;
 }
 
 /* footer*/
-h5{
+h4{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--oliveGreen);
     color: var(--taupe);
+}
+
+/*media query*/
+@media screen and (max-width:768px){
+    h1{
+        font-size:medium;
+    }
+
+    .hero-image{
+        height: 200px;
+        font-size: medium;
+    }
+
+   .navbar{
+       font-size: medium;
+       flex-direction: column;
+       align-items: center;
+}
+
+.navbar a {
+    margin-bottom: 10px;
+}
+h3{
+    font-size: medium;
+}
+.subsection{
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+}
+.aboutMeImage{
+    height: 200px;
+    width: 100px;
+}
+
+.projectGrid{
+    display: grid;
+    grid-template-columns: repeat (5, 100%);
+    grid-template-areas: "projectImage1" "projectImage2" "projectImage3" "projectImage4" "projectImage5"; 
+
+}
+
+.projectImage1,
+.projectImage2,
+.projectImage3,
+.projectImage4,
+.projectImage5{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactSub{
+    font-size: medium;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    font-size: small;
+}
 }
